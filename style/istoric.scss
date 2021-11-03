@@ -1,0 +1,173 @@
+/*istoric.css->Asigura stilizarea paginii ce cuprinde evolutia muzicii clasice (istoric.html)*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url(../resurse/andrea-zanenga-IvPaFmjz9qU-unsplash.jpg);
+  background-size: 1920px 3000px;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 2000px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+
+  .container {
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 15px;
+    color: #333;
+    font-family: sans-serif;
+    line-height: 1.5;
+    width: 90%;
+    padding: 1rem 3rem;
+    backdrop-filter: blur(10px) opacity(0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+
+    .container-left {
+      display: flex;
+      justify-content: flex-start;
+      h1 {
+        font-family: "Italianno", sans-serif;
+        font-size: 4em;
+        font-weight: bolder;
+        transition: 2s;
+      }
+      h1:hover {
+        transform: translateX(200px);
+        cursor: pointer;
+      }
+    }
+
+    .container-right {
+      justify-content: flex-end;
+      font-size: 1em;
+      table {
+        font-family: "PT Serif", serif;
+        width: 100%;
+        border-collapse: collapse;
+        text-align: center;
+        border-radius: 15px;
+        font-weight: bold;
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+
+      th,
+      td {
+        border: 1px solid grey;
+        padding: 8px;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+
+      td:hover {
+        background-color: #ddd;
+        cursor: pointer;
+      }
+
+      th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: center;
+        background-color: grey;
+        color: white;
+      }
+    }
+  }
+}
+
+.flex-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1em;
+
+  .card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5em;
+    padding-bottom: 0;
+    margin-top: 0;
+    backdrop-filter: blur(10px) opacity(0.2);
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 80%;
+    border-radius: 15px;
+    transition: 2s;
+
+    .stanga {
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      h3 {
+        font-family: "PT Serif", serif;
+        font-size: 1.5em;
+        font-weight: bold;
+        padding-left: 0.8em;
+      }
+    }
+
+    .dreapta {
+      display: flex;
+      align-items: flex-end;
+      flex-direction: row;
+      i {
+        align-self: baseline;
+        color: #4a4a4a;
+      }
+    }
+
+    .continut {
+      display: block;
+      transition: 0.3s;
+      height: 50px;
+      .show {
+        display: block;
+        width: 300px;
+        height: auto;
+        float: left;
+        padding: 1em;
+        transition: 0.3s;
+      }
+      .visible {
+        margin: 1em;
+        display: block;
+        font-size: 1em;
+        font-family: "PT Serif", serif;
+        line-height: 1.4em;
+        text-indent: 0.5em;
+        transition: 0.3s;
+      }
+
+      .visible::first-letter {
+        font-size: 2em;
+        font-weight: bolder;
+      }
+
+      .hide,
+      .invisible {
+        display: none;
+        transition: 0.3s;
+      }
+    }
+
+    #xxi {
+      padding-bottom: 3em !important;
+    }
+  }
+}

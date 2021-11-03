@@ -1,0 +1,152 @@
+/*compozitori.css->Asigura stilizarea paginii cu compozitori (compozitori.html)*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 1600px;
+}
+
+.text {
+  margin-top: 5em;
+}
+
+.text h1 {
+  font-size: 2.5em;
+  text-align: center;
+  font-family: "PT Serif", serif;
+  font-weight: bolder;
+  padding-bottom: 2em;
+}
+
+.collection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 1.5em;
+}
+
+.collection .card {
+  height: 400px;
+  width: 23%;
+  background-color: #f5cea6;
+  border-radius: 5px;
+  -webkit-box-shadow: 1px 1px lightgray;
+          box-shadow: 1px 1px lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0.93em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.collection .card img {
+  display: block;
+  margin: 0 auto;
+  border-style: none;
+  border-radius: 50%;
+  padding-top: 2em;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.collection .card img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.collection .card h3 {
+  text-align: center;
+  font-family: "PT Serif", serif;
+}
+
+.collection .card #asculta {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bolder;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.collection .card #opreste {
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bolder;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  background-color: white;
+  margin-bottom: 1em;
+}
+
+.collection .card #opreste:hover {
+  background-color: #9b2915;
+  color: white;
+}
+
+.collection .card #asculta:hover {
+  background-color: #9b2915;
+  color: white;
+}
+
+.collection .card .off {
+  display: none;
+}
+
+.collection .card .on {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collection .card:hover {
+  -webkit-animation: shadow 0.5s ease-in forwards;
+          animation: shadow 0.5s ease-in forwards;
+}
+
+@-webkit-keyframes shadow {
+  25% {
+    -webkit-box-shadow: 0 0px 5px darkslategray;
+            box-shadow: 0 0px 5px darkslategray;
+  }
+  100% {
+    -webkit-box-shadow: 0 0px 15px darkslategray;
+            box-shadow: 0 0px 15px darkslategray;
+  }
+}
+
+@keyframes shadow {
+  25% {
+    -webkit-box-shadow: 0 0px 5px darkslategray;
+            box-shadow: 0 0px 5px darkslategray;
+  }
+  100% {
+    -webkit-box-shadow: 0 0px 15px darkslategray;
+            box-shadow: 0 0px 15px darkslategray;
+  }
+}
+/*# sourceMappingURL=compozitori.css.map */

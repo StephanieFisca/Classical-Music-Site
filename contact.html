@@ -1,0 +1,181 @@
+<!--Fisier contact.html=>Aceasta pagina web este dedicata creatorului website-ului.
+Aceasta pagina surprinde atat motivatia autorului de a crea acest site web, cat si o zona de contact ce va permite vizitatorilor sa intre in contact direct cu creatorul site-ului.-->
+
+
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Importarea fisierelor .css pentru stilizarea paginii-->
+  <link rel="stylesheet" href="style/navigatie.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="stylesheet" href="style/contact.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="resurse/favicon-16x16.png">
+  <script src="https://kit.fontawesome.com/4c0ae9b205.js" crossorigin="anonymous"></script>
+  <title>Muzică Clasică-Contact</title>
+</head>
+<body>
+
+  <!--Introducerea barei navigatoare-->
+  <nav class="navbar">
+    <div class="stanga">
+      <div class="icon"><a href="#bottom"><i class="fas fa-guitar fa-3x"></i></a>
+      </div>
+      <div class="logo"><a href="index.html">Muzică Clasică</a>
+      </div>
+      </div>
+    <div class="navbar-meniu">
+      <ul>
+        <!--Introducerea link-urilor in dreapta barei care duc spre diferitele pagini al site-ului-->
+        <li><a href="index.html" class="acasa">Acasă</a></li>
+        <li><a href="compozitori.html" class="compozitori">Compozitori</a></li>
+        <li><a href="istoric.html" class="istoric">Evoluția muzicii clasice</a></li>
+        <li><a href="slagare.html" class="slagare">Operele revoluționare</a></li>
+        <li><a href="contact.html" class="contact">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="flex-container">
+
+    <div class="left-container">
+
+      <span><h1 class="about-me"><big>Despre mine</big></h1></span>
+      <img src="resurse/steph.jpeg" alt="Poza persoala" title="Poză Personală" width="250" height="300">
+      <button class="afisare off">Click aici pentru a afla mai multe despre mine</button>
+      <p class="invisible paragraf">Bună! Numele meu este Stephanie. Pasiunea mea pentru muzica clasică a apărut încă din copilărie, aceasta fiindu-mi insuflată de către tatăl meu, care este un adevărat audiofil. Am creat acest website din dorința de a atrage cât mai mulți oameni spre acest tip de muzică noncomercială, respctiv spre acești artiști, a căror existență va fi una veșnică, grație operelor extravagante pe care au reușit să le conceapă de-a lungul secolelor. </p>
+    </div>
+
+    <div class="right-container">
+      <h1 class="about-me"><big>Contact & Feedback</big></h1>
+
+
+      <div class="form-start">
+      <form action="#">
+        <div class="items">
+        <label for="name" id="name-label">Nume și prenume</label>
+        <input type="text" id="name" name="name" required placeholder="Introduceți numele și prenumele">
+      </div>
+      <div class="items">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" name="email" required placeholder="Introduceți email-ul">
+      </div>
+
+      <div class="items">
+        <label for="number" id="varsta">Vârsta(Optional)</label>
+        <input type="number" id="number" name="number" required placeholder=" Selectați vârsta" min="12" max="99" aria-required="false">
+      </div>
+
+      <div class="items2">
+        <label for="dropdown" id="gen">Cine este compozitorul vostru preferat?</label>
+        <select name="choice" id="dropdown">
+          <option value=""  selected disabled>--Selecați o opțiune--</option>
+          <option value="Prokofiev">Prokofiev</option>
+          <option value="Liszt">Liszt</option>
+          <option value="Haydn">Haydn</option>
+          <option value="Brahms">Brahms</option>
+          <option value="Schubert">Schubert</option>
+          <option value="Vivaldi">Vivaldi</option>
+          <option value="Rachmaninov">Rachmaninov</option>
+          <option value="Tchaikovsky">Tchaikovsky</option>
+          <option value="Beethoven">Beethoven</option>
+          <option value="Mozart">Mozart</option>
+          <option value="Bach">Bach</option>
+          <option value="Handel">Handel</option>
+          <option value="Sostakovich">Sostakovich</option>
+          <option value="Schumann">Schumann</option>
+          <option value="Debussy">Debussy</option>
+        </select>
+      </div>
+
+
+      <div class="items3">
+        <p>Ce părere aveți despre conținutul acestui website?</p>
+        <div>
+          <input type="radio" id="first" name="why" value="first" class="radio">
+          <label for="first">Conținutul este unul adecvat și foarte bine expus publicului.</label>
+        </div>
+
+        <div>
+          <input type="radio" id="second" name="why" value="second" class="radio">
+          <label for="first">Conținutul este total neadecvat.</label>
+        </div>
+
+        <div>
+          <input type="radio" id="third" name="why" value="third" class="radio">
+          <label for="first">Părere neutră.</label>
+        </div>
+        </div>
+
+        <div class="items4">
+          <p>De ce ascultați muzică clasică?</p>
+          <div>
+            <input type="checkbox" id="unu" name="unu" checked value="unu" class="check">
+            <label for="unu">Mă liniștește.</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="doi" name="doi" value="doi" class="check">
+            <label for="doi">Este singurul gen muzical pe care îl prefer.</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="trei" name="trei" value="trei" class="check">
+            <label for="3">Nu îmi place muzica din prezent.</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="patru" name="patru" value="patru" class="check">
+            <label for="patru">Deoarece îmi place să fiu nonconformist(ă).</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="cinci" name="cinci" value="cinci" class="check">
+            <label for="cinci">Nu îmi place/Nu ascult muzică clasică.</label>
+          </div>
+
+          </div>
+
+          <div class="items5">
+            <label for="story">Hai să comunicăm:</label>
+            <textarea placeholder="Text..." id="story" name="story" ></textarea>
+          </div>
+
+          <div class="items6">
+            <label for="picture">Trimite-mi o poză cu tine:</label>
+            <input type="file" name="picture" value="picture" id="picture" accept="image/jpg, image/png,image/jpeg">
+          </div>
+
+          <div class="form-end">
+            <button id="trimite"><pre>T R I M I T E</pre></button>
+          </div>
+          <div class="reset">
+            <button id="reset"><pre>R E S E T</pre></button>
+          </div>
+      </div>
+    </div>
+      </form>
+    </div>
+  </div>
+  
+
+  <div class="footer" id="bottom">
+    <div class="footer-left">
+      <a href="https://www.facebook.com/stephanie.fisca"><i class="fab fa-facebook fa-3x fb"></i></a>
+      <a href="https://github.com/StephanieFisca"><i class="fab fa-github fa-3x gh"></i></a>
+      <a href="mailto:stephaniefisca02@gmail.com"><i class="fas fa-envelope mail fa-3x"></i></a>
+      <a href="#top"><i class="fas fa-chevron-circle-up fa-3x up"></i></a>
+  </div>
+
+  <div class="footer-right">
+    <h4>© Stephanie Fîșcă, 2021. Toate drepturile rezervate.</h4>
+  </div>
+</div>
+<script src="scripturi/contact.js"></script>
+<script src="scripturi/main.js"></script>
+</body>
+</html>

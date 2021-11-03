@@ -1,0 +1,166 @@
+/*Fisier style.css-Asigura stilizarea paginii de start index.html*/
+
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+// Stiluri aplicate pe intreg documentul
+* {
+  box-sizing: border-box;
+}
+
+//Aplicarea unei imagini de fundal
+body {
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  background-color: #f5cea6;
+  margin: 4em;
+  border-radius: 30px;
+  transition: 2s;
+
+  .title {
+    font-family: "Italianno", cursive;
+    text-align: center;
+    font-size: 4em;
+    padding-top: 1em;
+    transition: 0.6s;
+    margin: 0 auto;
+    display: block;
+    cursor: pointer;
+  }
+
+  .title:hover {
+    transform: scale(1.1);
+  }
+
+  .subtitle {
+    text-align: center;
+    font-weight: 600;
+    font-family: "PT Serif", serif;
+    padding-bottom: 3em;
+  }
+
+  .div-imagine {
+    background-color: burlywood;
+    margin-left: 3em;
+    margin-right: 3em;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    padding-bottom: 3em;
+    height: 400px;
+    border-radius: 10px;
+    box-shadow: 1px 1px lightgray;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-radius: 5px;
+      height: 300px;
+      transition: 0.2s;
+    }
+
+    img:hover {
+      transform: scale(1.2);
+    }
+  }
+
+  #info {
+    h2 {
+      text-align: center;
+      font-family: "Italianno", cursive;
+      font-size: 3em;
+    }
+
+    article {
+      p {
+        font-family: "PT Serif", serif;
+        line-height: 1.4em;
+        text-indent: 1em;
+        margin-left: 2em;
+        margin-right: 2em;
+        font-size: 1.5em;
+      }
+
+      .last {
+        padding-bottom: 1em;
+      }
+    }
+  }
+
+  hr {
+    border-top: 3px solid #9b2915;
+    border-bottom: 3px solid #f5cea6;
+  }
+
+  hr:after {
+    content: "";
+    display: block;
+    margin-top: 2px;
+    border-top: 3px solid #9b2915;
+    border-bottom: 3px solid #f5cea6;
+  }
+
+  #info2 {
+    h2 {
+      text-align: center;
+      font-family: "Italianno", serif;
+      font-size: 3em;
+    }
+
+    ol {
+      margin-left: 1.5em;
+      list-style-position: outside;
+      font-size: 1.5em;
+      padding-bottom: 1.5rem;
+      li {
+        font-family: "PT Serif", serif;
+        list-style-type: upper-roman;
+        blockquote {
+          font-family: "PT Serif", serif;
+          margin-left: 2em;
+          margin-right: 2em;
+        }
+      }
+    }
+  }
+
+  #info3 {
+    transition: 0.3s;
+    height: 150px;
+    h2 {
+      text-align: center;
+      font-family: "Italianno", serif;
+      font-size: 3em;
+      transition: 1s;
+      padding-bottom: 1em;
+      a {
+        text-decoration: none;
+        transition: 1s;
+        color: black;
+      }
+
+      a:hover {
+        color: #9b2915;
+      }
+
+      a:visited {
+        color: #9b2915;
+      }
+    }
+
+    .shown {
+      display: block;
+      height: 400px;
+      width: 75%;
+      padding-bottom: 2em;
+      border-radius: 15px;
+    }
+
+    .hidden {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,211 @@
+<!--compozitori.html- pagina aferenta compozitorilor.
+De aici, utilizatorul va putea sa interactioneze cu o lista vasta a celor mai cunoscuti compozitori ai ultimelor secole si va putea sa redea fragmente din creatiile lor cele mai consacrate.
+Aceasta functie de redare a fost construita pe baza scriptului javascript compozitori.js -->
+
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/4c0ae9b205.js" crossorigin="anonymous"></script>
+  <!--Importarea fisierelor .css pentru stilizarea paginii-->
+  <link rel="stylesheet" href="style/navigatie.css">
+  <link rel="stylesheet" href="style/compozitori.css">
+  <link rel="stylesheet" href="style/footer.css">
+  <link rel="icon" type="image/png" sizes="16x16" href="resurse/favicon-16x16.png">
+  <title>Muzică Clasică-Compozitori</title>
+</head>
+<body>
+  <!--Introducerea barei navigatoare-->
+  <nav class="navbar">
+    <div class="stanga">
+      <div class="icon"><a href="#bottom"><i class="fas fa-guitar fa-3x"></i></a>
+      </div>
+      <div class="logo"><a href="index.html">Muzică Clasică</a>
+      </div>
+      </div>
+    <div class="navbar-meniu">
+      <ul>
+        <li><a href="index.html" class="acasa">Acasă</a></li>
+        <li><a href="compozitori.html" class="compozitori">Compozitori</a></li>
+        <li><a href="istoric.html">Evoluția muzicii clasice</a></li>
+        <li><a href="slagare.html">Operele revoluționare</a></li>
+        <li><a href="contact.html" class="contact">Contact</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <div class="text">
+    <h1>Iată o listă detaliată a celor mai iluștri compozitori ai ultimelor secole:</h1>
+  </div>
+  <!--Colectia de card-uri cu numeroasele compozitori-->
+  <main id="comp">
+
+    <div class="collection">
+    <div class="card">
+      <img src="resurse/bach2.jpg" alt="J. Bach">
+      <h3>J. Bach</h3>
+      <!--Utilizarea butoanelor pentru activarea si dezactivarea fragmentelor muzicale-->
+      <button id="asculta" class="asculta bach">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/mozart.jpg" alt="W. Mozart" height="218" width="200">
+      <h3>W. Mozart</h3>
+      <button id="asculta" class="asculta mozart">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/beethoven.jpg" alt="L. Beethoven" height="218" width="200">
+      <h3>L. Beethoven</h3>
+      <button id="asculta" class="asculta beethoven">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/chopin.jpg" alt="F. Chopin" height="218" width="200">
+      <h3>F. Chopin</h3>
+      <button id="asculta" class="asculta chopin">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/tchaikovsky.jpg" alt="P. Tchaikovsky" height="218" width="200">
+      <h3>P. Tchaikovsky</h3>
+      <button id="asculta" class="asculta tchaikovsky">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/sergei.jpg" alt="S. Rachmaninov" height="218" width="200">
+      <h3>S. Rachmaninov</h3>
+      <button id="asculta" class="asculta rachmaninov">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/vivaldi.jpg" alt="A. Vivaldi" height="218" width="200">
+      <h3>A. Vivaldi</h3>
+      <button id="asculta" class="asculta vivaldi">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/schubert.jpg" alt="F. Schubert" height="218" width="200">
+      <h3>F. Schubert</h3>
+      <button id="asculta" class="asculta schubert">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/schubert.jpg" alt="J. Brahms" height="218" width="200">
+      <h3>J. Brahms</h3>
+      <button id="asculta" class="asculta brahms">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/haydn.jpg" alt="J. Haydn" height="218" width="200">
+      <h3>J. Haydn</h3>
+      <button id="asculta" class="asculta haydn">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/liszt.jpg" alt="F. Liszt" height="218" width="200">
+      <h3>F. Liszt</h3>
+      <button id="asculta" class="asculta liszt">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/Prokofiev.jpg" alt="S. Prokofiev" height="218" width="200">
+      <h3>S. Prokofiev</h3>
+      <button id="asculta" class="asculta prokofiev">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/handel.jpg" alt="G. Handel" height="218" width="200">
+      <h3>G. Handel</h3>
+      <button id="asculta" class="asculta handel">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/sostakovich.jpg" alt="D. Shostakovich" height="218" width="200">
+      <h3>D. Shostakovich</h3>
+      <button id="asculta" class="asculta shostacovich">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/schumann.jpg" alt="R. Schumann" height="218" width="200">
+      <h3>R. Schumann</h3>
+      <button id="asculta" class="asculta schumann">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/debussy.jpg" alt="C. Debussy" height="218" width="200">
+      <h3>C. Debussy</h3>
+      <button id="asculta" class="asculta debussy">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/verdi.jpg" alt="G. Verdi" height="218" width="200">
+      <h3>G. Verdi</h3>
+      <button id="asculta" class="asculta verdi">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/saint-saens.jpg" alt="C. Saint-Saens" height="218" width="200">
+      <h3>C. Saint-Saens</h3>
+      <button id="asculta" class="asculta saint-saens">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/straus.jpg" alt="J. Strauss" height="218" width="200">
+      <h3>J. Strauss</h3>
+      <button id="asculta" class="asculta strauss">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+    <div class="card">
+      <img src="resurse/enescu2.jpg" alt="G. Enescu" height="218" width="200">
+      <h3>G. Enescu</h3>
+      <button id="asculta" class="asculta enescu">Ascultă fragment muzical</button>
+      <button id="opreste" class="off">Oprește fragment muzical</button>
+    </div>
+
+  </div>
+  </main>
+
+
+  <!--Crearea footer-ului paginii-->
+  <div class="footer" id="bottom">
+    <div class="footer-left">
+      <a href="https://www.facebook.com/stephanie.fisca"><i class="fab fa-facebook fa-3x fb"></i></a>
+      <a href="https://github.com/StephanieFisca"><i class="fab fa-github fa-3x gh"></i></a>
+      <a href="mailto:stephaniefisca02@gmail.com"><i class="fas fa-envelope mail fa-3x"></i></a>
+      <a href="#top"><i class="fas fa-chevron-circle-up fa-3x up"></i></a>
+  </div>
+
+  <div class="footer-right">
+    <h4>© Stephanie Fîșcă, 2021. Toate drepturile rezervate.</h4>
+  </div>
+</div>
+
+  <!--Importarea scripturilor in JavaScript-->
+  <script src="scripturi/main.js"></script>
+  <script src="scripturi/compozitori.js"></script>
+</body>
+</html>

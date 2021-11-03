@@ -1,0 +1,103 @@
+/*navigatie.css-foaie de stil importata de toate cele 5 pagini html.
+Aceasta foaie de stil a fost utilizata pentru stilizarea eficienta a meniului de navigare al site-ului.*/
+@import url("https://fonts.googleapis.com/css2?family=Italianno&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&display=swap");
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5cea6;
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 70px;
+  color: black;
+}
+
+.navbar .stanga {
+  padding: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .stanga i {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .stanga i:hover {
+  color: #9b2915;
+}
+
+.navbar .stanga .icon a {
+  text-decoration: none;
+  color: black;
+}
+
+.navbar .stanga .logo a {
+  font-family: "Italianno", cursive;
+  color: black;
+  text-decoration: none;
+  font-size: 2.5em;
+  font-weight: bold;
+  padding-top: 1em !important;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  padding-left: 0.5em;
+}
+
+.navbar .stanga .logo a:hover {
+  color: #9b2915;
+}
+
+.navbar .navbar-meniu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.navbar .navbar-meniu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.navbar .navbar-meniu ul li {
+  list-style-type: none;
+  padding: 1em;
+  float: right;
+  font-size: 1.5em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.navbar .navbar-meniu ul li a {
+  text-decoration: none;
+  color: black;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  font-family: "Lobster", cursive;
+}
+
+.navbar .navbar-meniu ul li a:hover {
+  color: #9b2915;
+}
+/*# sourceMappingURL=navigatie.css.map */

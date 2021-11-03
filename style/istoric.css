@@ -1,0 +1,245 @@
+/*istoric.css->Asigura stilizarea paginii ce cuprinde evolutia muzicii clasice (istoric.html)*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url(../resurse/andrea-zanenga-IvPaFmjz9qU-unsplash.jpg);
+  background-size: 1920px 3000px;
+  background-position: center;
+  background-blend-mode: overlay;
+  height: 2000px;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em;
+}
+
+.flex-container .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2em;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 15px;
+  color: #333;
+  font-family: sans-serif;
+  line-height: 1.5;
+  width: 90%;
+  padding: 1rem 3rem;
+  -webkit-backdrop-filter: blur(10px) opacity(0.2);
+          backdrop-filter: blur(10px) opacity(0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.flex-container .container .container-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.flex-container .container .container-left h1 {
+  font-family: "Italianno", sans-serif;
+  font-size: 4em;
+  font-weight: bolder;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.flex-container .container .container-left h1:hover {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px);
+  cursor: pointer;
+}
+
+.flex-container .container .container-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1em;
+}
+
+.flex-container .container .container-right table {
+  font-family: "PT Serif", serif;
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+  border-radius: 15px;
+  font-weight: bold;
+}
+
+.flex-container .container .container-right table a {
+  text-decoration: none;
+  color: black;
+}
+
+.flex-container .container .container-right th,
+.flex-container .container .container-right td {
+  border: 1px solid grey;
+  padding: 8px;
+}
+
+.flex-container .container .container-right tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.flex-container .container .container-right td:hover {
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+.flex-container .container .container-right th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: grey;
+  color: white;
+}
+
+.flex-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 1em;
+}
+
+.flex-2 .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5em;
+  padding-bottom: 0;
+  margin-top: 0;
+  -webkit-backdrop-filter: blur(10px) opacity(0.2);
+          backdrop-filter: blur(10px) opacity(0.2);
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 80%;
+  border-radius: 15px;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.flex-2 .card .stanga {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-2 .card .stanga h3 {
+  font-family: "PT Serif", serif;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-left: 0.8em;
+}
+
+.flex-2 .card .dreapta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-2 .card .dreapta i {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  color: #4a4a4a;
+}
+
+.flex-2 .card .continut {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  height: 50px;
+}
+
+.flex-2 .card .continut .show {
+  display: block;
+  width: 300px;
+  height: auto;
+  float: left;
+  padding: 1em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.flex-2 .card .continut .visible {
+  margin: 1em;
+  display: block;
+  font-size: 1em;
+  font-family: "PT Serif", serif;
+  line-height: 1.4em;
+  text-indent: 0.5em;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.flex-2 .card .continut .visible::first-letter {
+  font-size: 2em;
+  font-weight: bolder;
+}
+
+.flex-2 .card .continut .hide,
+.flex-2 .card .continut .invisible {
+  display: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.flex-2 .card #xxi {
+  padding-bottom: 3em !important;
+}
+/*# sourceMappingURL=istoric.css.map */

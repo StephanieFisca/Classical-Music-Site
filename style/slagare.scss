@@ -1,0 +1,71 @@
+/*Fisier slagare.css->fisier ce asigura stilizarea paginii referitoare la slagare (slagare.html)*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("../resurse/slagare.jpg");
+  background-size: 1920px 3000px;
+  height: 3000px;
+}
+
+.content {
+  margin: 0 auto;
+  width: 85%;
+  margin-top: 5em;
+  backdrop-filter: blur(10px) opacity(0.1);
+  background-color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+  height: auto;
+  border-radius: 15px;
+  margin-bottom: 3em;
+
+  h1 {
+    padding-top: 1em;
+    font-size: 4em;
+    font-family: "Italianno", cursive;
+    font-weight: bolder;
+    text-align: center;
+    transition: 2s;
+
+    h1:hover{
+      transform:translateX(700px);
+        cursor: pointer;
+    }
+  }
+
+  .gif {
+    margin-bottom: 3em;
+    text-align: center;
+    img {
+      border: 5px solid #9b2915;
+      border-radius: 10px;
+    }
+  }
+
+  h3 {
+    font-size: 1.5em;
+    font-family: "PT Serif", serif;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  iframe {
+    border-radius: 15px;
+    border: none;
+    margin-bottom: 3em;
+    margin: 0 auto;
+  }
+  article {
+    p {
+      font-size: 1.2em;
+      font-family: "PT Serif", serif;
+      text-align: center;
+      padding: 5em;
+      padding-top: 2em;
+      padding-bottom: 2em;
+      line-height: 1.4em;
+      text-indent: 1.5em;
+    }
+  }
+}

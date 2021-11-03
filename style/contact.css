@@ -1,0 +1,534 @@
+/*Fisier contact.css=>asigura stilizarea paginii de Contact a site-ului (contact.html)*/
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-image: url("../resurse/gradient-4.jpg");
+  background-blend-mode: overlay;
+  background-position: center;
+}
+
+.flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-container .left-container {
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 70vh;
+  width: 35%;
+  color: black;
+  border-radius: 15px;
+  background-color: #f5cea6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 3em;
+}
+
+.flex-container .left-container span h1 {
+  font-family: "PT Serif", serif;
+  text-align: center;
+}
+
+.flex-container .left-container img {
+  margin-top: 2em;
+  height: auto;
+  border: 4px solid white;
+  border-radius: 50%;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.flex-container .left-container img:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.flex-container .left-container button {
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  padding: 1em;
+  font-size: 1em;
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  background-color: coral;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.flex-container .left-container button:hover {
+  background-color: #9b2915;
+  color: white;
+}
+
+.flex-container .left-container .invisible {
+  display: none;
+}
+
+.flex-container .left-container .visible {
+  display: block;
+  line-height: 1.4em;
+  text-indent: 1em;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: "PT Serif", serif;
+  margin: 1em;
+  padding-top: 1em;
+  padding-bottom: 1.5em;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.flex-container .right-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 120vh;
+  width: 45%;
+  color: black;
+  border-radius: 15px;
+  background-color: #f5cea6;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  margin: 3em;
+  margin-bottom: 6em;
+}
+
+.flex-container .right-container h1 {
+  text-align: center;
+  font-family: "PT Serif", serif;
+  padding-bottom: 0em;
+}
+
+.flex-container .right-container .form-start {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+
+.flex-container .right-container .form-start .items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.flex-container .right-container .form-start .items label {
+  font-family: "PT Serif", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 0.15em;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-top: 1.2em;
+}
+
+.flex-container .right-container .form-start .items input {
+  width: 100%;
+  height: 1.6em;
+  text-indent: 0.2em;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border: 2px solid white;
+}
+
+.flex-container .right-container .form-start .items input:focus {
+  outline: none;
+  border: 2px solid #9b2915;
+}
+
+.flex-container .right-container .form-start .items label:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+  padding-left: 1.4em;
+}
+
+.flex-container .right-container .form-start .items2 label {
+  font-family: "PT Serif", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 0.15em;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-top: 1.2em;
+}
+
+.flex-container .right-container .form-start .items2 label:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items2 select {
+  width: 100%;
+  height: 1.6em;
+  text-indent: 0.2em;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border: 2px solid white;
+}
+
+.flex-container .right-container .form-start .items2 select:focus {
+  outline: none;
+  border: #9b2915;
+}
+
+.flex-container .right-container .form-start .items2 option:hover {
+  background-color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.flex-container .right-container .form-start .items3 p {
+  font-size: 1.2em;
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+  padding-left: 0.2em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.flex-container .right-container .form-start .items3 p:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items3 div {
+  font-size: 1.2em;
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+}
+
+.flex-container .right-container .form-start .items3 div input {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.flex-container .right-container .form-start .items3 div label {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.flex-container .right-container .form-start .items3 div label:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.flex-container .right-container .form-start .items4 p {
+  font-size: 1.2em;
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+  padding-left: 0.2em;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.flex-container .right-container .form-start .items4 p:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items4 div {
+  font-size: 1.2em;
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+}
+
+.flex-container .right-container .form-start .items4 div input {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.flex-container .right-container .form-start .items4 div label:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items4 div label {
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  font-size: 1em !important;
+  font-family: "PT Serif", sans-serif;
+  font-weight: bold;
+  padding-left: 0.2em;
+}
+
+.flex-container .right-container .form-start .items5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.flex-container .right-container .form-start .items5 label {
+  font-family: "PT Serif", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 0.15em;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-top: 1.2em;
+}
+
+.flex-container .right-container .form-start .items5 label:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items5 textarea {
+  width: 100%;
+  height: 1.6em;
+  text-indent: 0.2em;
+  border-radius: 10px;
+  border-style: none;
+  font-family: "PT Serif", sans-serif;
+  font-size: 1em;
+  -webkit-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+  border: 2px solid white;
+  resize: none;
+  height: 8em;
+  padding-bottom: 1em;
+}
+
+.flex-container .right-container .form-start .items5 textarea:focus {
+  outline: none;
+  border: 2px solid #9b2915;
+}
+
+.flex-container .right-container .form-start .items6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 1.2em;
+}
+
+.flex-container .right-container .form-start .items6 label {
+  font-family: "PT Serif", sans-serif;
+  font-size: 1.2em;
+  padding-bottom: 0.5em;
+  padding-left: 0.15em;
+  font-weight: bold;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  padding-top: 1.2em;
+}
+
+.flex-container .right-container .form-start .items6 label:hover {
+  color: #9b2915;
+}
+
+.flex-container .right-container .form-start .items6 input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-family: "PT Serif", serif;
+  font-size: 1.2em;
+  padding: 0.2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flex-container .right-container .form-start .form-end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 1.5em;
+}
+
+.flex-container .right-container .form-start .form-end button {
+  border: none;
+  margin: 0.5em;
+  border-radius: 15px;
+  background-color: greenyellow;
+  width: 55%;
+  font-weight: bolder;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.flex-container .right-container .form-start .form-end button pre {
+  font-family: "PT Serif", serif;
+  font-size: 1.5em;
+}
+
+.flex-container .right-container .form-start .form-end button:hover {
+  background-color: #9b2915;
+  color: white;
+}
+
+.flex-container .right-container .form-start .form-end button:focus {
+  outline: none;
+}
+
+.flex-container .right-container .form-start .reset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-container .right-container .form-start .reset button {
+  border: none;
+  margin: 0.5em;
+  margin-bottom: 1.5em;
+  border-radius: 15px;
+  background-color: #8ecae6;
+  width: 45%;
+  font-weight: bolder;
+  color: black;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.flex-container .right-container .form-start .reset button pre {
+  font-family: "PT Serif", serif;
+  font-size: 1.5em;
+}
+
+.flex-container .right-container .form-start .reset button:hover {
+  background-color: #9b2915;
+  color: white;
+}
+
+.flex-container .right-container .form-start .reset button:focus {
+  outline: none;
+}
+/*# sourceMappingURL=contact.css.map */

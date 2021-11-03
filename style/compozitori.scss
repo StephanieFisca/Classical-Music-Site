@@ -1,0 +1,114 @@
+/*compozitori.css->Asigura stilizarea paginii cu compozitori (compozitori.html)*/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 1600px;
+}
+
+.text {
+  margin-top: 5em;
+  h1 {
+    font-size: 2.5em;
+    text-align: center;
+    font-family: "PT Serif", serif;
+    font-weight: bolder;
+    padding-bottom: 2em;
+  }
+}
+
+.collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-bottom: 1.5em;
+  .card {
+    height: 400px;
+    width: 23%;
+    background-color: #f5cea6;
+    border-radius: 5px;
+    box-shadow: 1px 1px lightgray;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0.93em;
+    transition: 0.3s;
+
+    img {
+      display: block;
+      margin: 0 auto;
+      border-style: none;
+      border-radius: 50%;
+      padding-top: 2em;
+      transition: 0.5s;
+    }
+
+    img:hover {
+      transform: scale(1.1);
+    }
+
+    h3 {
+      text-align: center;
+      font-family: "PT Serif", serif;
+    }
+
+    #asculta {
+      border: none;
+      outline: none;
+      font-size: 1em;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      border-radius: 15px;
+      font-weight: bolder;
+      transition: 0.4s;
+      background-color: white;
+      margin-bottom: 1em;
+    }
+
+    #opreste {
+      border: none;
+      outline: none;
+      font-size: 1em;
+      font-family: "Roboto", sans-serif;
+      text-align: center;
+      border-radius: 15px;
+      font-weight: bolder;
+      transition: 0.4s;
+      background-color: white;
+      margin-bottom: 1em;
+    }
+
+    #opreste:hover {
+      background-color: #9b2915;
+      color: white;
+    }
+
+    #asculta:hover {
+      background-color: #9b2915;
+      color: white;
+    }
+    .off {
+      display: none;
+    }
+
+    .on {
+      display: flex;
+    }
+  }
+
+  .card:hover {
+    animation: shadow 0.5s ease-in forwards;
+  }
+
+  @keyframes shadow {
+    25% {
+      box-shadow: 0 0px 5px darkslategray;
+    }
+    100% {
+      box-shadow: 0 0px 15px darkslategray;
+    }
+  }
+}
